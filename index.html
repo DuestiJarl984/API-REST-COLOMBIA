@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atractivos Turísticos · Ricardo Lora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-noise"></div>
+    <nav class="nav">
+      <span class="nav-brand">Colombia Turística</span>
+      <span class="nav-author">por <strong>Ricardo Lora</strong></span>
+    </nav>
+    <div class="hero-body">
+      <p class="hero-label">Análisis · 2024</p>
+      <h1 class="hero-title">Atractivos<br/><em>Turísticos</em><br/>de Colombia</h1>
+      <p class="hero-desc">Distribución y estadísticas de los sitios turísticos más destacados del país, agrupados por departamento.</p>
+    </div>
+    <div class="hero-pills" id="hero-pills"></div>
+    <div class="hero-scroll">↓ Explorar</div>
+  </header>
+
+  <main>
+
+    <!-- SECCIÓN GRÁFICA -->
+    <section class="section">
+      <div class="section-label">Estadística principal</div>
+      <h2 class="section-title">Atractivos por departamento</h2>
+      <p class="section-sub">¿Cuáles departamentos concentran más sitios turísticos registrados en la API?</p>
+      <div class="chart-wrap">
+        <div id="chartDpto"></div>
+      </div>
+      <div class="insight-box" id="insight"></div>
+    </section>
+
+    <!-- SECCIÓN DEPARTAMENTOS -->
+    <section class="section">
+      <div class="section-label">Directorio</div>
+      <h2 class="section-title">Departamentos destacados</h2>
+      <p class="section-sub">Cada departamento con sus atractivos y datos clave.</p>
+      <div class="dpto-grid" id="dpto-grid"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-name">Ricardo Lora</div>
+      <div class="footer-copy">Datos: API Atractivos Turísticos Colombia · Visualización con Plotly.js</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
